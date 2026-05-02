@@ -666,6 +666,11 @@ body::after {
   color: var(--muted);
   border: 1px solid var(--border);
 }
+.certif-status.running {
+  background: rgba(0,255,136,0.1);
+  color: var(--green);
+  border: 1px solid var(--green3);
+}
 
 .veille-tabs {
   display: flex; gap: 0;
@@ -989,6 +994,10 @@ body::after {
       <span class="icon">🔒</span>
       <span class="label">certif/</span>
     </a>
+    <a class="nav-item" href="#fiche-competences">
+      <span class="icon">📋</span>
+      <span class="label">fiche-competences/</span>
+    </a>
     <a class="nav-item" href="#veille">
       <span class="icon">📡</span>
       <span class="label">veille/</span>
@@ -1042,7 +1051,7 @@ body::after {
       </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projets">./voir-projets.sh</a>
-        <a class="btn btn-ghost" href="CV/CV Manase Samuel Diakolo (1).pdf" download>cat cv.pdf</a>
+        <a class="btn btn-ghost" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>cat cv.pdf</a>
         <a class="btn btn-ghost" href="#contact">ssh contact</a>
       </div>
     </div>
@@ -1071,14 +1080,14 @@ body::after {
       </div>
       <div class="cmd-output">
         <div><span class="key">name:</span>       <span class="val">Manase Samuel Diakolo</span></div>
-        <div><span class="key">role:</span>       <span class="val green">Futur Administrateur Systèmes & Réseaux</span></div>
+        <div><span class="key">role:</span>       <span class="val green">Futur Administrateur Systèmes &amp; Réseaux</span></div>
         <div><span class="key">formation:</span>  <span class="val">BTS SIO SISR – Lycée Gustave Flaubert</span></div>
         <div><span class="key">localisation:</span><span class="val blue">Rouen, Seine-Maritime 76</span></div>
         <div><span class="key">alternance:</span> <span class="val amber">S.E.G.C Ouvrez L'œil · Canteleu</span></div>
         <div><span class="key">statut:</span>     <span class="val green">● Apprenti en informatique spécialisé en systèmes et réseaux (BTS SIO – option SISR)</span></div>
         <div><span class="key"># bio:</span>      <span class="comment"></span></div>
         <div style="padding-left:16px;color:var(--muted2);font-size:12px;line-height:1.8;margin-top:4px">
-          Étudiant en BTS SIO SISR, j'ai développé de solides compétences en administration réseaux & systèmes,<br>
+          Étudiant en BTS SIO SISR, j'ai développé de solides compétences en administration réseaux &amp; systèmes,<br>
           tout en nourrissant une passion grandissante pour le développement logiciel (C#, Go, Python, Bash, PowerShell)<br>
           que je pratique aussi bien en entreprise que sur mes projets personnels.
         </div>
@@ -1231,7 +1240,7 @@ body::after {
           <span class="branch">alternance</span>
           <span class="branch" style="color:var(--green);border-color:var(--green3);background:var(--green-dim)">current</span>
         </div>
-        <div class="git-body">Administrateur réseaux & technicien de maintenance. Configuration d'équipements réseau, gestion des postes utilisateurs, interventions sur site. Canteleu 76380.</div>
+        <div class="git-body">Administrateur réseaux &amp; technicien de maintenance. Configuration d'équipements réseau, gestion des postes utilisateurs, interventions sur site. Canteleu 76380.</div>
       </div>
     </div>
     <div class="git-commit">
@@ -1372,7 +1381,7 @@ body::after {
         <span class="cmd">wget <span class="flag">--output-document</span>=<span class="arg">cv-manase.pdf</span> <span style="color:var(--green3)">/cv.pdf</span></span>
       </div>
       <div class="term-line" style="margin-top:16px;">
-        <a class="btn btn-primary" href="CV/CV Manase Samuel Diakolo (1).pdf" download style="display:inline-flex">
+        <a class="btn btn-primary" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download style="display:inline-flex">
           Télécharger CV.pdf →
         </a>
       </div>
@@ -1387,40 +1396,57 @@ body::after {
     <h2 class="section-title">ls certifications/ -la</h2>
   </div>
   <div class="certif-list reveal">
-    <div class="certif-item planned">
-      <div class="certif-icon">🔵</div>
+    <div class="certif-item">
+      <div class="certif-icon">🎓</div>
       <div class="certif-info">
-        <div class="certif-name">Cisco CCNA — Routing & Switching</div>
-        <div class="certif-org">Cisco Systems · Objectif 2026</div>
+        <div class="certif-name">Certification PIX</div>
+        <div class="certif-org">PIX · Compétences numériques certifiées</div>
       </div>
-      <span class="certif-status inprogress">EN COURS</span>
-    </div>
-    <div class="certif-item planned">
-      <div class="certif-icon">🐧</div>
-      <div class="certif-info">
-        <div class="certif-name">Linux Essentials (LPI 010)</div>
-        <div class="certif-org">Linux Professional Institute · Objectif 2026</div>
-      </div>
-      <span class="certif-status inprogress">EN COURS</span>
-    </div>
-    <div class="certif-item planned">
-      <div class="certif-icon">🔐</div>
-      <div class="certif-info">
-        <div class="certif-name">SecNumAcadémie — Cybersécurité</div>
-        <div class="certif-org">ANSSI · En préparation</div>
-      </div>
-      <span class="certif-status planned">PLANIFIÉ</span>
-    </div>
-    <div class="certif-item planned">
-      <div class="certif-icon">🪟</div>
-      <div class="certif-info">
-        <div class="certif-name">Microsoft AZ-900 — Azure Fundamentals</div>
-        <div class="certif-org">Microsoft · En réflexion</div>
-      </div>
-      <span class="certif-status planned">PLANIFIÉ</span>
+      <span class="certif-status running">OBTENU</span>
     </div>
   </div>
 </section>
+
+<!-- FICHE DE COMPÉTENCES -->
+<section class="section" id="fiche-competences">
+  <div class="section-header reveal">
+    <span class="section-id">06b</span>
+    <h2 class="section-title">cat fiche-competences.pdf</h2>
+  </div>
+  <div class="reveal">
+  <div class="cv-terminal">
+    <div class="term-bar">
+      <div class="term-dot r"></div>
+      <div class="term-dot a"></div>
+      <div class="term-dot g"></div>
+      <span style="margin-left:8px">terminal — tableau-synthese-E5.pdf</span>
+    </div>
+    <div class="term-body" style="padding:0">
+      <div style="padding:16px 24px 12px;border-bottom:1px solid var(--border)">
+        <div class="term-line">
+          <span class="prompt">$</span>
+          <span class="cmd">xdg-open <span class="arg">~/documents/tableau-synthese-E5.pdf</span></span>
+        </div>
+        <div class="term-line"><span class="output">→ Tableau de synthèse des réalisations professionnelles — BTS SIO 2026</span></div>
+        <div class="term-line"><span class="output">→ Manase Samuel Diakolo · Option SISR</span></div>
+      </div>
+      <div style="background:var(--bg3);padding:0">
+        <iframe 
+          src="img/BTS_SIO_Annexe_VI.5_Epreuve%20E5%20-%20Tableau%20de%20synthe_se_2026.xlsx%20-%20Tableau%20de%20synth%C3%A8se%20%C3%89preuve%20E5_Manase_Samuel_Diakolo.pdf"
+          style="width:100%;height:700px;border:0;display:block;background:#fff"
+          title="Tableau de synthèse E5 — Manase Samuel Diakolo">
+        </iframe>
+      </div>
+      <div style="padding:12px 24px">
+        <a class="btn btn-primary" href="img/BTS_SIO_Annexe_VI.5_Epreuve%20E5%20-%20Tableau%20de%20synthe_se_2026.xlsx%20-%20Tableau%20de%20synth%C3%A8se%20%C3%89preuve%20E5_Manase_Samuel_Diakolo.pdf" download="BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthèse Épreuve E5_Manase_Samuel_Diakolo.pdf" style="display:inline-flex;margin-top:4px">
+          Télécharger la fiche →
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
 
 <!-- VEILLE -->
 <section class="section" id="veille">
@@ -1430,8 +1456,8 @@ body::after {
   </div>
   <div class="reveal">
   <div class="veille-tabs">
-    <div class="vtab active" onclick="switchTab('ia')">[ IA & Automatisation ]</div>
-    <div class="vtab" onclick="switchTab('banque')">[ Blockchain & Banque ]</div>
+    <div class="vtab active" onclick="switchTab('ia')">[ IA &amp; Automatisation ]</div>
+    <div class="vtab" onclick="switchTab('banque')">[ Blockchain &amp; Banque ]</div>
   </div>
   <div class="vtab-content active" id="tab-ia">
     <div class="log-stream">
@@ -1439,7 +1465,7 @@ body::after {
       <a class="log-entry" href="#" onclick="openVeille('ia2'); return false;"><div class="log-entry-img"><img src="./img/b203-372881524f4a.png" alt="Genesis AI"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">usinenouvelle.com</span> · Oct. 2025</div><div class="log-title">Genesis AI, nouvelle pépite de la robotique industrielle</div><div class="log-tags"><span class="log-tag">robotique</span><span class="log-tag">industrie</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia3'); return false;"><div class="log-entry-img"><img src="./img/Healthcare_AI.jpg" alt="Jumeau numérique"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">lequotidiendumedecin.fr</span> · Oct. 2025</div><div class="log-title">Le jumeau numérique en prévention au Pôle santé Bergère</div><div class="log-tags"><span class="log-tag">santé</span><span class="log-tag">jumeau-num</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia4'); return false;"><div class="log-entry-img"><img src="./img/The_Intersection_of_AI_and_Augmented_Reality.jpg" alt="XR Days"/><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">expressions-venissieux.fr</span> · Oct. 2025</div><div class="log-title">XR Days : réalité étendue et IA dans l'industrie</div><div class="log-tags"><span class="log-tag">xr</span><span class="log-tag">industrie</span><span class="log-tag">ia</span></div></div></a>
-      <a class="log-entry" href="#" onclick="openVeille('ia5'); return false;"><div class="log-entry-img"><img src="./img/detection-165929.png" alt="DiaDeep"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">lyon-entreprises.com</span> · Oct. 2025</div><div class="log-title">DiaDeep & Roche : IA pour détecter le cancer du sein</div><div class="log-tags"><span class="log-tag">medtech</span><span class="log-tag">diagnostics</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia5'); return false;"><div class="log-entry-img"><img src="./img/detection-165929.png" alt="DiaDeep"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">lyon-entreprises.com</span> · Oct. 2025</div><div class="log-title">DiaDeep &amp; Roche : IA pour détecter le cancer du sein</div><div class="log-tags"><span class="log-tag">medtech</span><span class="log-tag">diagnostics</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia6'); return false;"><div class="log-entry-img"><img src="./img/automated-machine-learning.jpg" alt="Assistants IA santé"/><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">latribune.fr</span> · Jan. 2026</div><div class="log-title">Assistants IA en santé : la bataille européenne est lancée</div><div class="log-tags"><span class="log-tag">santé</span><span class="log-tag">europe</span><span class="log-tag">rgpd</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia7'); return false;"><div class="log-entry-img"><img src="./img/170441.png" alt="Gobano Robotics"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">usinenouvelle.com</span> · Jan. 2026</div><div class="log-title">Gobano Robotics : robotiser les tâches manuelles par IA</div><div class="log-tags"><span class="log-tag">robotique</span><span class="log-tag">rl</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia8'); return false;"><div class="log-entry-img"><img src="./img/Sleep-Research-with-AI.jpg" alt="SleepFM"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">vietnam.vn</span> · Jan. 2026</div><div class="log-title">SleepFM : l'IA prédit 130 maladies via le sommeil</div><div class="log-tags"><span class="log-tag">stanford</span><span class="log-tag">santé</span><span class="log-tag">prédiction</span></div></div></a>
@@ -1447,7 +1473,7 @@ body::after {
   </div>
   <div class="vtab-content" id="tab-banque">
     <div class="log-stream">
-      <a class="log-entry" href="#" onclick="openVeille('bk1'); return false;"><div class="log-entry-img"><img src="./img/402161899.jpg" alt="Pi Network"/><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">coinfomania.com</span> · Sep. 2025</div><div class="log-title">Pi Network & SidraBank : système financier sans intérêts</div><div class="log-tags"><span class="log-tag">blockchain</span><span class="log-tag">crypto</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('bk1'); return false;"><div class="log-entry-img"><img src="./img/402161899.jpg" alt="Pi Network"/><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">coinfomania.com</span> · Sep. 2025</div><div class="log-title">Pi Network &amp; SidraBank : système financier sans intérêts</div><div class="log-tags"><span class="log-tag">blockchain</span><span class="log-tag">crypto</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('bk2'); return false;"><div class="log-entry-img"><img src="./img/f9f31495260c.png" alt="IA bancaire"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">lebigdata.fr</span> · Oct. 2025</div><div class="log-title">IA et gestion bancaire : secteur en transformation</div><div class="log-tags"><span class="log-tag">banque</span><span class="log-tag">automation</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('bk3'); return false;"><div class="log-entry-img"><img src="./img/2c214f1.png" alt="Paiements"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">daf-mag.fr</span> · Nov. 2025</div><div class="log-title">Moderniser les paiements : impératif stratégique à l'ère de l'IA</div><div class="log-tags"><span class="log-tag">paiements</span><span class="log-tag">temps-réel</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('bk4'); return false;"><div class="log-entry-img"><img src="./img/8fb9.png" alt="n8n"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">codeursenseine.com</span> · Nov. 2025</div><div class="log-title">IA locales ou distantes et n8n comme chef d'orchestre</div><div class="log-tags"><span class="log-tag">n8n</span><span class="log-tag">automation</span><span class="log-tag">ollama</span></div></div></a>
@@ -1487,7 +1513,7 @@ body::after {
           <span class="cl-label">GitHub</span>
           M4cal0u
         </a>
-        <a class="contact-link" href="CV/CV Manase Samuel Diakolo (1).pdf" download>
+        <a class="contact-link" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>
           <span class="cl-icon">📄</span>
           <span class="cl-label">CV PDF</span>
           Télécharger →
@@ -1530,7 +1556,7 @@ body::after {
   <div class="footer-right">
     <a href="https://github.com/M4cal0u" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/manase-samuel-diakolo-116579387" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="CV/CV Manase Samuel Diakolo (1).pdf" download>CV</a>
+    <a href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>CV</a>
   </div>
 </footer>
 
