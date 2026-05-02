@@ -981,7 +981,7 @@ body::after {
     <a class="nav-item" href="#projets">
       <span class="icon"></span>
       <span class="label">projets/</span>
-      <span class="badge">3</span>
+      <span class="badge">4</span>
     </a>
   </div>
   <div class="nav-section">
@@ -1001,7 +1001,7 @@ body::after {
     <a class="nav-item" href="#veille">
       <span class="icon"></span>
       <span class="label">veille/</span>
-      <span class="badge">14</span>
+      <span class="badge">20</span>
     </a>
   </div>
   <div class="nav-section">
@@ -1051,7 +1051,7 @@ body::after {
       </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projets">./voir-projets.sh</a>
-        <a class="btn btn-ghost" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>cat cv.pdf</a>
+        <a class="btn btn-ghost" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" target="_blank" rel="noopener">cat cv.pdf</a>
         <a class="btn btn-ghost" href="#contact">ssh contact</a>
       </div>
     </div>
@@ -1135,90 +1135,266 @@ body::after {
     <span class="section-id">02</span>
     <h2 class="section-title">ps aux — processus actifs</h2>
   </div>
-  <div class="reveal">
-  <table class="ps-table">
-    <thead>
-      <tr>
-        <th>PID</th>
-        <th>PROCESS</th>
-        <th>CATÉGORIE</th>
-        <th>MAÎTRISE</th>
-        <th>STATUS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="pid">1001</td>
-        <td class="pname">linux-kernel</td>
-        <td><span style="color:var(--muted2)">Systèmes</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div><span style="font-size:11px;color:var(--muted)">82%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1002</td>
-        <td class="pname">windows-server-ad</td>
-        <td><span style="color:var(--muted2)">Systèmes</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><span style="font-size:11px;color:var(--muted)">75%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1010</td>
-        <td class="pname">vlan-routing</td>
-        <td><span style="color:var(--muted2)">Réseaux</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span style="font-size:11px;color:var(--muted)">80%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1011</td>
-        <td class="pname">vpn-service</td>
-        <td><span style="color:var(--muted2)">Réseaux</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div><span style="font-size:11px;color:var(--muted)">72%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1020</td>
-        <td class="pname">docker-daemon</td>
-        <td><span style="color:var(--muted2)">Infrastructure</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill amber" style="width:68%"></div></div><span style="font-size:11px;color:var(--muted)">68%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1021</td>
-        <td class="pname">proxmox-ve</td>
-        <td><span style="color:var(--muted2)">Virtualisation</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill amber" style="width:65%"></div></div><span style="font-size:11px;color:var(--muted)">65%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1022</td>
-        <td class="pname">ansible-playbook</td>
-        <td><span style="color:var(--muted2)">Automatisation</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill amber" style="width:60%"></div></div><span style="font-size:11px;color:var(--muted)">60%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1030</td>
-        <td class="pname">grafana-prometheus</td>
-        <td><span style="color:var(--muted2)">Supervision</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill blue" style="width:70%"></div></div><span style="font-size:11px;color:var(--muted)">70%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1040</td>
-        <td class="pname">cisco-ccna</td>
-        <td><span style="color:var(--muted2)">Certifications</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill amber" style="width:40%"></div></div><span style="font-size:11px;color:var(--muted)">40%</span></div></td>
-        <td><span class="status-badge learning">LEARNING</span></td>
-      </tr>
-      <tr>
-        <td class="pid">1041</td>
-        <td class="pname">bash-scripting</td>
-        <td><span style="color:var(--muted2)">Scripting</span></td>
-        <td><div class="cpu-bar"><div class="bar-track"><div class="bar-fill" style="width:74%"></div></div><span style="font-size:11px;color:var(--muted)">74%</span></div></td>
-        <td><span class="status-badge running">RUNNING</span></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="reveal" id="comp-accordion">
+
+  <style>
+  .comp-category {
+    border: 1px solid var(--border);
+    margin-bottom: 2px;
+    background: var(--bg3);
+    overflow: hidden;
+  }
+  .comp-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .comp-header:hover { background: var(--surface); }
+  .comp-header.open { background: var(--surface); border-bottom: 1px solid var(--border); }
+  .comp-pid { font-size: 11px; color: var(--green3); font-weight: 600; min-width: 36px; }
+  .comp-name { flex: 1; font-size: 13px; font-weight: 600; color: var(--text); }
+  .comp-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .comp-tag {
+    font-size: 9px; padding: 1px 7px;
+    background: var(--bg); border: 1px solid var(--border2);
+    color: var(--muted2); border-radius: 2px;
+  }
+  .comp-tag.hi { border-color: var(--green3); color: var(--green); }
+  .comp-arrow {
+    font-size: 10px; color: var(--muted);
+    transition: transform 0.2s;
+    margin-left: 8px;
+  }
+  .comp-header.open .comp-arrow { transform: rotate(90deg); }
+  .comp-body {
+    display: none;
+    padding: 16px 20px 18px 70px;
+    border-top: 0;
+  }
+  .comp-body.open { display: block; }
+  .comp-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .comp-body ul li {
+    font-size: 12px;
+    color: var(--muted2);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.6;
+  }
+  .comp-body ul li::before {
+    content: '▸';
+    position: absolute; left: 0;
+    color: var(--green3);
+    font-size: 10px;
+    top: 2px;
+  }
+
+  .comp-tools {
+    margin-top: 24px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    padding: 20px 24px;
+  }
+  .comp-tools-title {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .comp-tools-title::after { content:''; flex:1; height:1px; background: var(--border); }
+  .comp-tools-grid { display: flex; flex-direction: column; gap: 8px; }
+  .comp-tools-row { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .comp-tools-label { font-size: 10px; color: var(--green3); min-width: 110px; flex-shrink: 0; }
+  .comp-tools-vals { display: flex; flex-wrap: wrap; gap: 5px; }
+  .comp-tools-val {
+    font-size: 10px; padding: 2px 8px;
+    background: var(--bg3); border: 1px solid var(--border);
+    color: var(--muted2); border-radius: 2px;
+  }
+  </style>
+
+  <div class="comp-category">
+    <div class="comp-header open" onclick="toggleComp(this)">
+      <span class="comp-pid">1001</span>
+      <span class="comp-name">Administration systèmes &amp; réseaux</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Linux</span>
+        <span class="comp-tag hi">Windows Server</span>
+        <span class="comp-tag">AD</span>
+        <span class="comp-tag">Cisco</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body open">
+      <ul>
+        <li>Installation et configuration de serveurs Linux et Windows Server</li>
+        <li>Mise en place d'Active Directory, GPO, DNS, DHCP et serveur de fichiers</li>
+        <li>Configuration réseau : VLAN, routage, ACL, Cisco, Stormshield</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-category">
+    <div class="comp-header" onclick="toggleComp(this)">
+      <span class="comp-pid">1002</span>
+      <span class="comp-name">Virtualisation &amp; déploiement</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Proxmox</span>
+        <span class="comp-tag hi">Docker</span>
+        <span class="comp-tag">VM</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body">
+      <ul>
+        <li>Création et gestion de machines virtuelles avec Proxmox</li>
+        <li>Mise en place de sauvegardes de VM et stockage distant</li>
+        <li>Utilisation de Docker pour déployer des services conteneurisés</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-category">
+    <div class="comp-header" onclick="toggleComp(this)">
+      <span class="comp-pid">1003</span>
+      <span class="comp-name">Cybersécurité</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Stormshield</span>
+        <span class="comp-tag hi">Suricata</span>
+        <span class="comp-tag">Wireshark</span>
+        <span class="comp-tag">DVWA</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body">
+      <ul>
+        <li>Configuration de pare-feu avec UFW, iptables et Stormshield</li>
+        <li>Mise en place d'outils de sécurité : Suricata, Fail2ban, Lynis</li>
+        <li>Analyse réseau avec Wireshark et sensibilisation aux vulnérabilités web avec DVWA</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-category">
+    <div class="comp-header" onclick="toggleComp(this)">
+      <span class="comp-pid">1004</span>
+      <span class="comp-name">Supervision &amp; gestion d'incidents</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Nagios</span>
+        <span class="comp-tag hi">GLPI</span>
+        <span class="comp-tag">Tickets</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body">
+      <ul>
+        <li>Installation et configuration de Nagios</li>
+        <li>Mise en place de GLPI pour la gestion de tickets et du parc informatique</li>
+        <li>Suivi des alertes, services et équipements réseau</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-category">
+    <div class="comp-header" onclick="toggleComp(this)">
+      <span class="comp-pid">1005</span>
+      <span class="comp-name">Développement &amp; scripting</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Bash</span>
+        <span class="comp-tag hi">PowerShell</span>
+        <span class="comp-tag hi">Python</span>
+        <span class="comp-tag">C#</span>
+        <span class="comp-tag">Go</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body">
+      <ul>
+        <li>Automatisation avec Bash, PowerShell, Python</li>
+        <li>Création d'interfaces graphiques avec PowerShell WinForms</li>
+        <li>Bases en C#, Go, SQL, HTML, JSON et Node.js</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-category">
+    <div class="comp-header" onclick="toggleComp(this)">
+      <span class="comp-pid">1006</span>
+      <span class="comp-name">Gestion de projet</span>
+      <div class="comp-tags">
+        <span class="comp-tag hi">Scrum</span>
+        <span class="comp-tag">Gantt</span>
+        <span class="comp-tag">PERT</span>
+      </div>
+      <span class="comp-arrow">▶</span>
+    </div>
+    <div class="comp-body">
+      <ul>
+        <li>Utilisation de méthodes Scrum</li>
+        <li>Réalisation de diagrammes de Gantt et PERT</li>
+        <li>Organisation, planification et suivi de projets informatiques</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comp-tools">
+    <div class="comp-tools-title">outils &amp; technologies</div>
+    <div class="comp-tools-grid">
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Systèmes</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Linux</span><span class="comp-tools-val">Debian</span><span class="comp-tools-val">Windows Server</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Réseau</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Cisco</span><span class="comp-tools-val">Stormshield</span><span class="comp-tools-val">VLAN</span><span class="comp-tools-val">DNS</span><span class="comp-tools-val">DHCP</span><span class="comp-tools-val">VPN</span><span class="comp-tools-val">ACL</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Sécurité</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">UFW</span><span class="comp-tools-val">iptables</span><span class="comp-tools-val">Suricata</span><span class="comp-tools-val">Fail2ban</span><span class="comp-tools-val">Lynis</span><span class="comp-tools-val">Wireshark</span><span class="comp-tools-val">DVWA</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Virtualisation</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Proxmox</span><span class="comp-tools-val">Docker</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Supervision</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Nagios</span><span class="comp-tools-val">GLPI</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Développement</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Bash</span><span class="comp-tools-val">PowerShell</span><span class="comp-tools-val">Python</span><span class="comp-tools-val">C#</span><span class="comp-tools-val">Go</span><span class="comp-tools-val">SQL</span><span class="comp-tools-val">HTML</span><span class="comp-tools-val">JSON</span><span class="comp-tools-val">Node.js</span>
+        </div>
+      </div>
+      <div class="comp-tools-row">
+        <span class="comp-tools-label">Gestion projet</span>
+        <div class="comp-tools-vals">
+          <span class="comp-tools-val">Scrum</span><span class="comp-tools-val">Gantt</span><span class="comp-tools-val">PERT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div>
 </section>
 
@@ -1296,7 +1472,7 @@ body::after {
     <div class="fe-header">
       <span style="color:var(--green3)">drwxr-xr-x</span>
       <span class="fe-path">~/projets/</span>
-      <span>3 items · 2024–2026</span>
+      <span>4 items · 2024–2026</span>
     </div>
     <div class="fe-body">
       <div class="fe-row header">
@@ -1307,7 +1483,7 @@ body::after {
         <div class="fe-cell">description</div>
       </div>
       <div class="fe-row" onclick="toggleProject('mova')" style="cursor:pointer">
-        <div class="fe-cell">📁</div>
+        <div class="fe-cell"></div>
         <div class="fe-cell"><span class="fe-fname">mova<span class="ext">/</span></span><span style="font-size:10px;color:var(--green3);margin-left:8px">rwxr-xr-x</span></div>
         <div class="fe-cell"><span class="fe-size">4.2MB</span></div>
         <div class="fe-cell"><span class="fe-date">2025-03-12</span></div>
@@ -1323,7 +1499,7 @@ body::after {
         <button class="pm-close" onclick="toggleProject('mova')">✕ Fermer</button>
       </div>
       <div class="fe-row" onclick="toggleProject('pasteur')" style="cursor:pointer">
-        <div class="fe-cell">📁</div>
+        <div class="fe-cell"></div>
         <div class="fe-cell"><span class="fe-fname">clinique-pasteur<span class="ext">/</span></span><span style="font-size:10px;color:var(--green3);margin-left:8px">rwxr-xr-x</span></div>
         <div class="fe-cell"><span class="fe-size">6.8MB</span></div>
         <div class="fe-cell"><span class="fe-date">2024-11-08</span></div>
@@ -1339,7 +1515,7 @@ body::after {
         <button class="pm-close" onclick="toggleProject('pasteur')">✕ Fermer</button>
       </div>
       <div class="fe-row" onclick="toggleProject('pasteur2')" style="cursor:pointer">
-        <div class="fe-cell">📁</div>
+        <div class="fe-cell"></div>
         <div class="fe-cell"><span class="fe-fname">clinique-pasteur-v2<span class="ext">/</span></span><span style="font-size:10px;color:var(--amber);margin-left:8px">rwxrwxr-x</span></div>
         <div class="fe-cell"><span class="fe-size">9.1MB</span></div>
         <div class="fe-cell"><span class="fe-date">2025-01-20</span></div>
@@ -1353,6 +1529,22 @@ body::after {
           <div class="pm-section"><h4>Compétences validées</h4><div class="tech-list"><span class="tech-tag">IaC</span><span class="tech-tag">Supervision</span><span class="tech-tag">Virtualisation</span></div></div>
         </div>
         <button class="pm-close" onclick="toggleProject('pasteur2')">✕ Fermer</button>
+      </div>
+      <div class="fe-row" onclick="toggleProject('tct')" style="cursor:pointer">
+        <div class="fe-cell"></div>
+        <div class="fe-cell"><span class="fe-fname">TCT<span class="ext">/</span></span><span style="font-size:10px;color:var(--green3);margin-left:8px">rwxr-xr-x</span></div>
+        <div class="fe-cell"><span class="fe-size">—</span></div>
+        <div class="fe-cell"><span class="fe-date">2025 → now</span></div>
+        <div class="fe-cell"><span class="fe-desc">Jeu 2D multijoueur C#</span></div>
+      </div>
+      <div class="project-modal-panel" id="panel-tct">
+        <div class="pm-grid">
+          <div class="pm-section"><h4>Description</h4><p>Jeu vidéo 2D en vue de dessus développé en C# avec un camarade de promotion. Principe de "touche-touche" : un joueur possède une bombe et doit toucher les autres avant qu'elle n'explose.</p></div>
+          <div class="pm-section"><h4>Stack technique</h4><div class="tech-list"><span class="tech-tag primary">C#</span><span class="tech-tag primary">Unity</span><span class="tech-tag primary">Git / GitHub</span></div></div>
+          <div class="pm-section"><h4>Fonctionnalités</h4><p>Mode casual (points + timer) et mode mort subite (murs dynamiques, vitesse accrue, objets rares, bombe plus dangereuse). Menu principal, paramètres, tableau des scores, saisie de pseudos, objets bonus/malus aléatoires, écran de fin de partie.</p></div>
+          <div class="pm-section"><h4>Compétences mobilisées</h4><div class="tech-list"><span class="tech-tag">Développement C#</span><span class="tech-tag">Logique gameplay</span><span class="tech-tag">Gestion collisions</span><span class="tech-tag">UI</span><span class="tech-tag">Équilibrage</span><span class="tech-tag">Travail en équipe</span></div></div>
+        </div>
+        <button class="pm-close" onclick="toggleProject('tct')">✕ Fermer</button>
       </div>
     </div>
   </div>
@@ -1381,8 +1573,8 @@ body::after {
         <span class="cmd">wget <span class="flag">--output-document</span>=<span class="arg">cv-manase.pdf</span> <span style="color:var(--green3)">/cv.pdf</span></span>
       </div>
       <div class="term-line" style="margin-top:16px;">
-        <a class="btn btn-primary" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download style="display:inline-flex">
-          Télécharger CV.pdf →
+        <a class="btn btn-primary" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" target="_blank" rel="noopener" style="display:inline-flex">
+          Voir CV.pdf ↗
         </a>
       </div>
     </div>
@@ -1469,6 +1661,12 @@ body::after {
       <a class="log-entry" href="#" onclick="openVeille('ia6'); return false;"><div class="log-entry-img"><img src="./img/automated-machine-learning.jpg" alt="Assistants IA santé"/><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">latribune.fr</span> · Jan. 2026</div><div class="log-title">Assistants IA en santé : la bataille européenne est lancée</div><div class="log-tags"><span class="log-tag">santé</span><span class="log-tag">europe</span><span class="log-tag">rgpd</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia7'); return false;"><div class="log-entry-img"><img src="./img/170441.png" alt="Gobano Robotics"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">usinenouvelle.com</span> · Jan. 2026</div><div class="log-title">Gobano Robotics : robotiser les tâches manuelles par IA</div><div class="log-tags"><span class="log-tag">robotique</span><span class="log-tag">rl</span></div></div></a>
       <a class="log-entry" href="#" onclick="openVeille('ia8'); return false;"><div class="log-entry-img"><img src="./img/Sleep-Research-with-AI.jpg" alt="SleepFM"/><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">vietnam.vn</span> · Jan. 2026</div><div class="log-title">SleepFM : l'IA prédit 130 maladies via le sommeil</div><div class="log-tags"><span class="log-tag">stanford</span><span class="log-tag">santé</span><span class="log-tag">prédiction</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia9'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">beckershospitalreview.com</span> · Fév. 2026</div><div class="log-title">Health systems seek AI as a growth driver in 2026</div><div class="log-tags"><span class="log-tag">santé</span><span class="log-tag">ia</span><span class="log-tag">usa</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia10'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">usine-digitale.fr</span> · Fév. 2026</div><div class="log-title">Rob’Occ : le robot Roc-E rend l’automatisation accessible aux TPE/PME</div><div class="log-tags"><span class="log-tag">robotique</span><span class="log-tag">industrie</span><span class="log-tag">france</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia11'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">zdnet.fr</span> · Mars 2026</div><div class="log-title">Sanofi se rapproche de Station F pour doper sa R&amp;D à l’IA</div><div class="log-tags"><span class="log-tag">pharma</span><span class="log-tag">ia</span><span class="log-tag">startup</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia12'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">dsih.fr</span> · Mars 2026</div><div class="log-title">Corpus inédit de comptes rendus médicaux fictifs en open data pour l’IA</div><div class="log-tags"><span class="log-tag">open-data</span><span class="log-tag">santé</span><span class="log-tag">rgpd</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia13'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level warn">WARN</span></div><div class="log-body"><div class="log-timestamp"><span class="src">dsih.fr</span> · Avr. 2026</div><div class="log-title">CNIL &amp; HAS : bonnes pratiques pour l’IA en santé en France</div><div class="log-tags"><span class="log-tag">cnil</span><span class="log-tag">has</span><span class="log-tag">conformité</span></div></div></a>
+      <a class="log-entry" href="#" onclick="openVeille('ia14'); return false;"><div class="log-entry-img"><div style="width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green3);letter-spacing:0.15em">MSD</div><span class="log-level info">INFO</span></div><div class="log-body"><div class="log-timestamp"><span class="src">dsih.fr</span> · Avr. 2026</div><div class="log-title">Médiateam : chatbot IA pour le reporting des établissements médico-sociaux</div><div class="log-tags"><span class="log-tag">chatbot</span><span class="log-tag">reporting</span><span class="log-tag">médico-social</span></div></div></a>
     </div>
   </div>
   <div class="vtab-content" id="tab-banque">
@@ -1513,7 +1711,7 @@ body::after {
           <span class="cl-label">GitHub</span>
           M4cal0u
         </a>
-        <a class="contact-link" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>
+        <a class="contact-link" href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" target="_blank" rel="noopener">
           <span class="cl-icon"></span>
           <span class="cl-label">CV PDF</span>
           Télécharger →
@@ -1556,7 +1754,7 @@ body::after {
   <div class="footer-right">
     <a href="https://github.com/M4cal0u" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/manase-samuel-diakolo-116579387" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" download>CV</a>
+    <a href="CV/MANASE SAMUEL DIAKOLO_RES.pdf" target="_blank" rel="noopener">CV</a>
   </div>
 </footer>
 
@@ -1649,20 +1847,166 @@ resizeCanvas(); initNodes(); drawTopo();
 window.addEventListener('resize',()=>{resizeCanvas();initNodes();});
 
 const veilleData = {
-  ia1:{title:'Couchbase Edge Server & l\'edge Computing',source:'actuia.com · Mars 2025',url:'https://www.actuia.com/actualite/couchbase-lance-edge-server-pour-faire-face-au-defi-de-ledge-computing/',compris:`L'edge computing consiste à traiter les données là où elles sont générées, sans cloud centralisé. Couchbase lance Edge Server pour pallier la dépendance réseau avec une stratégie offline-first : les systèmes continuent de fonctionner même en cas de coupure, puis synchronisent quand la connexion revient.`,valeur:`Pour les environnements critiques (hôpitaux, sites industriels isolés), cela garantit la continuité de service, réduit la latence, permet l'IA locale et sécurise les données sensibles.`,fiabilite:`ActuIA est le site français de référence sur l'intelligence artificielle — source fiable et spécialisée.`},
-  ia2:{title:'Genesis AI — Nouvelle pépite de la robotique',source:'usinenouvelle.com · Octobre 2025',url:'https://www.usinenouvelle.com/editorial/genesis-ai-nouvelle-pepite-de-la-robotique.N2236873',compris:`Start-up issue de Mines Paris. L'opérateur "montre" la tâche au robot avec des outils instrumentés, l'IA enregistre gestes et forces, et traduit ça en programme exécutable — sans coder. Cible les PME/ETI sans experts robotique.`,valeur:`Automatiser sans experts spécialisés, réduire les coûts de déploiement, démocratiser la robotisation industrielle.`,fiabilite:`Usine Nouvelle est la référence française du secteur industriel — source sérieuse.`},
-  ia3:{title:'Jumeau numérique en prévention — Pôle santé Bergère',source:'lequotidiendumedecin.fr · Octobre 2025',url:'https://www.lequotidiendumedecin.fr/specialites/medecine-generale/au-pole-sante-bergere-une-premiere-utilisation-concrete-du-jumeau-numerique-en-prevention',compris:`Le jumeau numérique crée une copie virtuelle du patient, modèle dynamique qui évolue avec lui — bien au-delà d'un questionnaire. Permet une médecine vraiment personnalisée et la détection précoce des risques.`,valeur:`Prévention améliorée, optimisation des parcours de soins, gain de temps, meilleure allocation des ressources médicales.`,fiabilite:`Le Quotidien du Médecin est une référence reconnue pour les innovations médicales.`},
-  ia4:{title:'XR Days 2025 — Réalité étendue & IA dans l\'industrie',source:'expressions-venissieux.fr · Octobre 2025',url:'https://www.expressions-venissieux.fr/2025-10-23-xr-days-quand-la-realite-etendue-et-lia-font-bon-menage/',compris:`650 participants, thème central : convergence XR + IA. Exemple Stellantis : 15 grilles d'aération testées en une journée vs 80 000€ + 1 mois pour un prototype physique. Renault, Airbus, Safran présents.`,valeur:`Concevoir et tester plus vite, réduire les coûts prototypes, former sans risque. L'IA améliore la prise de décision dans les processus industriels.`,fiabilite:`Media local officiel de la ville de Vénissieux — source institutionnelle.`},
-  ia5:{title:'DiaDeep & Roche — IA pour la détection du cancer du sein',source:'lyon-entreprises.com · Octobre 2025',url:'https://www.lyon-entreprises.com/actualites/article/diadeep-sallie-a-roche-diagnostics-pour-faire-progresser-la-detection-du-cancer-du-sein-grace-a-lia',compris:`DiaDeep (medtech lyonnaise) intègre une IA dans le système Roche Diagnostics pour assister les pathologistes : analyse des lames histologiques, identification automatisée, réduction des délais d'interprétation.`,valeur:`Diagnostics plus rapides et précis, soutien aux pathologistes face au volume, amélioration directe de la qualité des soins.`,fiabilite:`Lyon-Entreprises est un média économique régional reconnu, bien que ses articles puissent parfois reprendre des communiqués.`},
-  ia6:{title:'Assistants IA en santé — La bataille européenne',source:'latribune.fr · Janvier 2026',url:'https://www.latribune.fr/article/tech/77157654408761/assistant-ia-en-sante-entre-chatgpt-et-les-alternatives-europeennes-la-bataille-est-lancee',compris:`Doctolib, PulseLife, Synapse Medicine : les assistants IA santé européens se multiplient face à ChatGPT. Enjeux : volume de littérature scientifique, conformité RGPD, AI Act. Solutions européennes mieux adaptées au cadre légal.`,valeur:`Gain de temps, aide à la décision, automatisation de la veille clinique, conformité réglementaire. Les solutions européennes apportent une meilleure sécurité des données.`,fiabilite:`La Tribune est un média économique français reconnu pour ses analyses tech et réglementaires.`},
-  ia7:{title:'Gobano Robotics — Robotiser les tâches manuelles',source:'usinenouvelle.com · Janvier 2026',url:'https://www.usinenouvelle.com/technos-et-innovations/ia-gobano-robotics-cherche-a-robotiser-des-taches-manuelles.PFJHIQMRJNO2NDOIBP7QP6WLGM.html',compris:`Start-up nantaise. Le robot apprend par observation (téléopération, vidéo) puis par apprentissage par renforcement — récompenses/pénalités. Atteint plus de 99% de réussite sur des tâches manuelles complexes.`,valeur:`Automatiser des tâches complexes sans reprogrammation complète. Gain en précision, autonomie et fiabilité industrielle.`,fiabilite:`Usine Nouvelle — référence de l'industrie française.`},
-  ia8:{title:'SleepFM — L\'IA prédit 130 maladies via le sommeil',source:'vietnam.vn · Janvier 2026',url:'https://www.vietnam.vn/fr/ai-du-doan-chinh-xac-hang-chuc-van-de-suc-khoe-thong-qua-giac-ngu',compris:`SleepFM (Stanford) analyse une nuit de sommeil et prédit ~130 maladies (AVC, démence, cancers, troubles rénaux) avec >80% de précision. Entraîné sur des dizaines de milliers de patients. Meilleur que les outils actuels pour la détection d'apnée.`,valeur:`Détection précoce de pathologies graves, médecine préventive personnalisée, optimisation du suivi patient à long terme.`,fiabilite:`Travaux du centre médical de Stanford, publiés en revue scientifique — très haute fiabilité.`},
-  bk1:{title:'Pi Network & SidraBank — Finance sans intérêts',source:'coinfomania.com · Septembre 2025',url:'https://coinfomania.com/fr/pi-network-et-sidrabank-construisent-un-systeme-financier-sans-interets/',compris:`Pi Network (minage de crypto via smartphone) + SidraBank (finance islamique sans intérêts) construisent un système financier automatisé où l'IA vérifie les transactions sans intermédiaire. Encore en phase de test.`,valeur:`Système financier sans frais d'intermédiaire, transactions vérifiées par IA avec meilleure traçabilité blockchain. Remet en question le modèle bancaire classique.`,fiabilite:`Coinfomania est spécialisé crypto — source pertinente mais à recouper avec des sources indépendantes.`},
-  bk2:{title:'IA & Gestion bancaire — Secteur en transformation',source:'lebigdata.fr · Octobre 2025',url:'https://www.lebigdata.fr/ia-banque-automatisation-services',compris:`L'IA automatise les processus bancaires, allège la pression sur les conseillers, offre des services personnalisés et une analyse prédictive des marchés. Impose un strict respect des règles de confidentialité.`,valeur:`Gain de temps, réduction des coûts opérationnels, personnalisation, sécurité renforcée, meilleure prise de décision stratégique.`,fiabilite:`LeBigData.fr est la référence française sur le Big Data, l'IA et la cybersécurité.`},
-  bk3:{title:'Moderniser les paiements — Impératif stratégique',source:'daf-mag.fr · Novembre 2025',url:'https://www.daf-mag.fr/fonction-finance-1242/moderniser-les-paiements-un-imperatif-strategique-pour-les-banques-a-lere-du-temps-reel-et-de-lia-23311',compris:`74% des dirigeants bancaires utilisent l'IA pour détecter la fraude, 63% pour le support client. Les systèmes legacy sont un frein. Architecture cible : microservices, cloud souverain, APIs ouvertes. DORA, NIS2, ISO 20022 comme leviers.`,valeur:`Rapidité, sécurité, conformité réglementaire, compétitivité face aux fintechs, meilleure expérience client.`,fiabilite:`DAF-Mag est un média spécialisé finance — source légitime pour ce sujet.`},
-  bk4:{title:'n8n — IA locales ou distantes, automatisation',source:'codeursenseine.com · Novembre 2025',url:'https://www.codeursenseine.com/2025/programme/conference-c-2-ia-locales-ou-distantes-outils-et-un-chef-d-orchestre-nomme-n8n-antonin-brugnot',compris:`N8n : plateforme open source no-code/low-code avec 400+ intégrations. IA agents : prompt système + prompt utilisateur. Ollama : modèles locaux (données privées, pas de latence réseau, mais gourmand en GPU). MCP cités : Playwright, Tavily, Atlassian. Docker/Google Cloud Run pour serverless.`,valeur:`Automatisation des processus métiers, contrôle des données, création d'assistants IA internes, flexibilité et sécurité.`,fiabilite:`Codeurs en Seine est un événement reconnu du milieu IT normand — source fiable basée sur une conférence en direct.`},
-  bk5:{title:'Comment les paiements se transforment en 2026',source:'lesnews.ca · Janvier 2026',url:'https://lesnews.ca/tech/mobiles/bancaire-central-comment-les-paiements-vont-ils-se-transformer-cette-annee/',compris:`Smartphone et portefeuilles numériques devraient devenir prédominants d'ici 3 ans. L'IA améliore la détection de fraude et personnalise les transactions. La numérisation s'accélère.`,valeur:`Transactions plus sécurisées et personnalisées, conformité simplifiée, efficacité opérationnelle accrue.`,fiabilite:`LesNews.ca est un média généraliste canadien — à recouper avec des sources spécialisées en finance.`},
-  bk6:{title:'Machine-to-machine — Éviter le piège de la banque invisible',source:'agefi.fr · Janvier 2026',url:'https://www.agefi.fr/gestion-privee/actualites/machine-to-machine-eviter-le-piege-de-la-banque-invisible',compris:`Demain : une IA détecte un besoin de trésorerie, génère le dossier de crédit, obtient une décision en temps réel via échanges automatiques. Les machines communiquent directement. Les banques risquent de devenir de simples fournisseurs d'infrastructure si elles n'exposent pas des APIs sémantiquement riches.`,valeur:`Processus financiers ultra-rapides et temps réel. Mais oblige à repenser les services pour rester compréhensibles par les agents IA.`,fiabilite:`L'Agefi est spécialisé marchés et banque — très haute fiabilité pour les professionnels de la finance.`}
+  ia1:{
+    title:`Couchbase Edge Server & l'edge Computing`,
+    source:`actuia.com · Mars 2025`,
+    url:`https://www.actuia.com/actualite/couchbase-lance-edge-server-pour-faire-face-au-defi-de-ledge-computing/`,
+    compris:`L'edge computing consiste à traiter les données là où elles sont générées, sans cloud centralisé. Couchbase lance Edge Server pour pallier la dépendance réseau avec une stratégie offline-first : les systèmes continuent de fonctionner même en cas de coupure, puis synchronisent quand la connexion revient.`,
+    valeur:`Pour les environnements critiques (hôpitaux, sites industriels isolés), cela garantit la continuité de service, réduit la latence, permet l'IA locale et sécurise les données sensibles.`,
+    fiabilite:`ActuIA est le site français de référence sur l'intelligence artificielle — source fiable et spécialisée.`
+  },
+  ia2:{
+    title:`Genesis AI — Nouvelle pépite de la robotique`,
+    source:`usinenouvelle.com · Octobre 2025`,
+    url:`https://www.usinenouvelle.com/editorial/genesis-ai-nouvelle-pepite-de-la-robotique.N2236873`,
+    compris:`Start-up issue de Mines Paris. L'opérateur "montre" la tâche au robot avec des outils instrumentés, l'IA enregistre gestes et forces, et traduit ça en programme exécutable — sans coder. Cible les PME/ETI sans experts robotique.`,
+    valeur:`Automatiser sans experts spécialisés, réduire les coûts de déploiement, démocratiser la robotisation industrielle.`,
+    fiabilite:`Usine Nouvelle est la référence française du secteur industriel — source sérieuse.`
+  },
+  ia3:{
+    title:`Jumeau numérique en prévention — Pôle santé Bergère`,
+    source:`lequotidiendumedecin.fr · Octobre 2025`,
+    url:`https://www.lequotidiendumedecin.fr/specialites/medecine-generale/au-pole-sante-bergere-une-premiere-utilisation-concrete-du-jumeau-numerique-en-prevention`,
+    compris:`Le jumeau numérique crée une copie virtuelle du patient, modèle dynamique qui évolue avec lui — bien au-delà d'un questionnaire. Permet une médecine vraiment personnalisée et la détection précoce des risques.`,
+    valeur:`Prévention améliorée, optimisation des parcours de soins, gain de temps, meilleure allocation des ressources médicales.`,
+    fiabilite:`Le Quotidien du Médecin est une référence reconnue pour les innovations médicales.`
+  },
+  ia4:{
+    title:`XR Days 2025 — Réalité étendue & IA dans l'industrie`,
+    source:`expressions-venissieux.fr · Octobre 2025`,
+    url:`https://www.expressions-venissieux.fr/2025-10-23-xr-days-quand-la-realite-etendue-et-lia-font-bon-menage/`,
+    compris:`650 participants, thème central : convergence XR + IA. Exemple Stellantis : 15 grilles d'aération testées en une journée vs 80 000€ + 1 mois pour un prototype physique. Renault, Airbus, Safran présents.`,
+    valeur:`Concevoir et tester plus vite, réduire les coûts prototypes, former sans risque. L'IA améliore la prise de décision dans les processus industriels.`,
+    fiabilite:`Media local officiel de la ville de Vénissieux — source institutionnelle.`
+  },
+  ia5:{
+    title:`DiaDeep & Roche — IA pour la détection du cancer du sein`,
+    source:`lyon-entreprises.com · Octobre 2025`,
+    url:`https://www.lyon-entreprises.com/actualites/article/diadeep-sallie-a-roche-diagnostics-pour-faire-progresser-la-detection-du-cancer-du-sein-grace-a-lia`,
+    compris:`DiaDeep (medtech lyonnaise) intègre une IA dans le système Roche Diagnostics pour assister les pathologistes : analyse des lames histologiques, identification automatisée, réduction des délais d'interprétation.`,
+    valeur:`Diagnostics plus rapides et précis, soutien aux pathologistes face au volume, amélioration directe de la qualité des soins.`,
+    fiabilite:`Lyon-Entreprises est un média économique régional reconnu, bien que ses articles puissent parfois reprendre des communiqués.`
+  },
+  ia6:{
+    title:`Assistants IA en santé — La bataille européenne`,
+    source:`latribune.fr · Janvier 2026`,
+    url:`https://www.latribune.fr/article/tech/77157654408761/assistant-ia-en-sante-entre-chatgpt-et-les-alternatives-europeennes-la-bataille-est-lancee`,
+    compris:`Doctolib, PulseLife, Synapse Medicine : les assistants IA santé européens se multiplient face à ChatGPT. Enjeux : volume de littérature scientifique, conformité RGPD, AI Act. Solutions européennes mieux adaptées au cadre légal.`,
+    valeur:`Gain de temps, aide à la décision, automatisation de la veille clinique, conformité réglementaire. Les solutions européennes apportent une meilleure sécurité des données.`,
+    fiabilite:`La Tribune est un média économique français reconnu pour ses analyses tech et réglementaires.`
+  },
+  ia7:{
+    title:`Gobano Robotics — Robotiser les tâches manuelles`,
+    source:`usinenouvelle.com · Janvier 2026`,
+    url:`https://www.usinenouvelle.com/technos-et-innovations/ia-gobano-robotics-cherche-a-robotiser-des-taches-manuelles.PFJHIQMRJNO2NDOIBP7QP6WLGM.html`,
+    compris:`Start-up nantaise. Le robot apprend par observation (téléopération, vidéo) puis par apprentissage par renforcement — récompenses/pénalités. Atteint plus de 99% de réussite sur des tâches manuelles complexes.`,
+    valeur:`Automatiser des tâches complexes sans reprogrammation complète. Gain en précision, autonomie et fiabilité industrielle.`,
+    fiabilite:`Usine Nouvelle — référence de l'industrie française.`
+  },
+  ia8:{
+    title:`SleepFM — L'IA prédit 130 maladies via le sommeil`,
+    source:`vietnam.vn · Janvier 2026`,
+    url:`https://www.vietnam.vn/fr/ai-du-doan-chinh-xac-hang-chuc-van-de-suc-khoe-thong-qua-giac-ngu`,
+    compris:`SleepFM (Stanford) analyse une nuit de sommeil et prédit ~130 maladies (AVC, démence, cancers, troubles rénaux) avec >80% de précision. Entraîné sur des dizaines de milliers de patients. Meilleur que les outils actuels pour la détection d'apnée.`,
+    valeur:`Détection précoce de pathologies graves, médecine préventive personnalisée, optimisation du suivi patient à long terme.`,
+    fiabilite:`Travaux du centre médical de Stanford, publiés en revue scientifique — très haute fiabilité.`
+  },
+  ia9:{
+    title:`Health systems seek AI as a growth driver in 2026`,
+    source:`beckershospitalreview.com · 2 février 2026`,
+    url:`https://www.beckershospitalreview.com/healthcare-information-technology/ai/health-systems-seek-ai-as-a-growth-driver-in-2026/`,
+    compris:`Les établissements de santé utilisent de plus en plus l'IA pour améliorer leur organisation. Elle permet d'automatiser des tâches répétitives, de réduire la charge de travail des professionnels et de déployer des solutions à l'échelle de l'entreprise. L'objectif n'est pas de remplacer les humains, mais de les aider au quotidien.`,
+    valeur:`Pour une entreprise de santé, l'IA apporte un gain de temps, une meilleure efficacité et une réduction des tâches administratives. Elle permet aux soignants de se concentrer davantage sur les patients.`,
+    fiabilite:`Becker's Hospital Review est un média spécialisé dans le secteur hospitalier américain. Il cite des responsables du domaine. Attention : source américaine, les exemples ne sont pas toujours directement applicables au système français.`
+  },
+  ia10:{
+    title:`Rob'Occ — Roc-E : automatisation accessible aux TPE/PME`,
+    source:`usine-digitale.fr · 6 février 2026`,
+    url:`https://www.usine-digitale.fr/intelligence-artificielle/robotique/avec-son-roc-e-la-start-up-francaise-robocc-veut-rendre-les-robots-de-transport-accessibles-aux-tpe-et-pme.XF4SHEEO6VCF5C5IBFZBLUEX44.html`,
+    compris:`La start-up française Rob'Occ développe Roc-E, un robot autonome de transport et logistique capable de se déplacer sans connexion permanente et de se recharger sans intervention humaine. L'automatisation industrielle devient accessible aux petites entreprises, pas seulement aux grands groupes.`,
+    valeur:`Réduction des tâches répétitives et physiques, gain de temps, meilleure productivité et limitation de la pénibilité. Solution intéressante pour les TPE/PME souhaitant automatiser certaines activités.`,
+    fiabilite:`L'Usine Digitale est un média français reconnu dans le numérique et l'industrie. L'article est centré sur une seule start-up et présente surtout les avantages du produit — il faut garder du recul.`
+  },
+  ia11:{
+    title:`Sanofi se rapproche de Station F pour doper sa R&D à l'IA`,
+    source:`zdnet.fr · 31 mars 2026`,
+    url:`https://www.zdnet.fr/actualites/pour-doper-sa-rd-a-lia-sanofi-se-rapproche-de-station-f-et-des-startups-492857.htm`,
+    compris:`Sanofi veut utiliser l'IA pour accélérer sa R&D. En se rapprochant de Station F et des start-ups spécialisées en data science et modélisation, l'entreprise cherche à analyser de grandes quantités de données et à accélérer la création de nouveaux traitements.`,
+    valeur:`Gain de temps dans la recherche, innovation plus rapide et collaboration avec des start-ups spécialisées. L'IA permet de repérer plus vite des pistes pour développer de nouveaux médicaments.`,
+    fiabilite:`ZDNET France est un média spécialisé dans le numérique et les technologies. L'information est renforcée par le communiqué officiel de Sanofi — source crédible.`
+  },
+  ia12:{
+    title:`Corpus inédit de comptes rendus médicaux fictifs en open data pour l'IA`,
+    source:`dsih.fr · 26 mars 2026`,
+    url:`https://dsih.fr/articles/6219/publication-dun-corpus-inedit-de-comptes-rendus-medicaux-fictifs-en-open-data-pour-accelerer-lia-en-sante`,
+    compris:`L'IA en santé a besoin de données de qualité pour être entraînée. La publication d'un corpus de plus de 6 000 comptes rendus médicaux fictifs en open data permet aux chercheurs et entreprises de tester des outils d'IA sans utiliser de vraies données patients — tout en respectant la confidentialité.`,
+    valeur:`Facilite le développement et le test de solutions d'IA en santé. Réduit les risques liés aux données personnelles et permet de créer des outils plus fiables avant déploiement réel.`,
+    fiabilite:`DSIH est un média spécialisé dans les systèmes d'information hospitaliers. L'information est confirmée par le Health Data Hub — source fiable.`
+  },
+  ia13:{
+    title:`CNIL & HAS : bonnes pratiques pour l'IA en santé`,
+    source:`dsih.fr · 14 avril 2026`,
+    url:`https://dsih.fr/articles/6237/ia-en-sante-en-france-eclairage-de-la-cnil-et-de-la-has-sur-les-bonnes-pratiques-du-developpement-a-lutilisation`,
+    compris:`L'utilisation de l'IA dans la santé doit être fortement encadrée. La CNIL et la HAS travaillent sur des bonnes pratiques pour accompagner les établissements et professionnels. Points clés : protection des données, sécurité, transparence et usage responsable de l'IA.`,
+    valeur:`Suivre ces recommandations permet d'utiliser l'IA de façon plus sûre et conforme. Cela renforce la confiance des patients et des professionnels, tout en évitant les risques juridiques liés au RGPD et aux données de santé.`,
+    fiabilite:`DSIH est spécialisé dans le numérique en santé. L'article s'appuie sur la CNIL et la HAS, deux organismes officiels français — très haute fiabilité.`
+  },
+  ia14:{
+    title:`Médiateam : chatbot IA pour le reporting médico-social`,
+    source:`dsih.fr · 28 avril 2026`,
+    url:`https://dsih.fr/articles/6252/comment-mediateam-utilise-lintelligence-artificielle-pour-interroger-les-donnees-de-reporting-des-etablissements-medico-sociaux`,
+    compris:`L'IA peut automatiser le reporting dans les établissements médico-sociaux. Un chatbot capable d'interroger des données en langage naturel permet d'obtenir rapidement indicateurs, graphiques et rapports, sans extractions manuelles fastidieuses.`,
+    valeur:`Gain de temps sur les tâches administratives, meilleur pilotage de l'activité, réponses plus rapides aux demandes d'indicateurs (ANAP, ARS), fiabilisation des données et aide à la décision.`,
+    fiabilite:`DSIH est spécialisé dans les SI de santé. Attention : l'article est un communiqué de Médiateam, donc il met surtout en avant les avantages de leur solution. Un retour d'expérience d'établissement utilisateur renforcerait la fiabilité.`
+  },
+  bk1:{
+    title:`Pi Network & SidraBank — Finance sans intérêts`,
+    source:`coinfomania.com · Septembre 2025`,
+    url:`https://coinfomania.com/fr/pi-network-et-sidrabank-construisent-un-systeme-financier-sans-interets/`,
+    compris:`Pi Network (minage de crypto via smartphone) + SidraBank (finance islamique sans intérêts) construisent un système financier automatisé où l'IA vérifie les transactions sans intermédiaire. Encore en phase de test.`,
+    valeur:`Système financier sans frais d'intermédiaire, transactions vérifiées par IA avec meilleure traçabilité blockchain. Remet en question le modèle bancaire classique.`,
+    fiabilite:`Coinfomania est spécialisé crypto — source pertinente mais à recouper avec des sources indépendantes.`
+  },
+  bk2:{
+    title:`IA & Gestion bancaire — Secteur en transformation`,
+    source:`lebigdata.fr · Octobre 2025`,
+    url:`https://www.lebigdata.fr/ia-banque-automatisation-services`,
+    compris:`L'IA automatise les processus bancaires, allège la pression sur les conseillers, offre des services personnalisés et une analyse prédictive des marchés. Impose un strict respect des règles de confidentialité.`,
+    valeur:`Gain de temps, réduction des coûts opérationnels, personnalisation, sécurité renforcée, meilleure prise de décision stratégique.`,
+    fiabilite:`LeBigData.fr est la référence française sur le Big Data, l'IA et la cybersécurité.`
+  },
+  bk3:{
+    title:`Moderniser les paiements — Impératif stratégique`,
+    source:`daf-mag.fr · Novembre 2025`,
+    url:`https://www.daf-mag.fr/fonction-finance-1242/moderniser-les-paiements-un-imperatif-strategique-pour-les-banques-a-lere-du-temps-reel-et-de-lia-23311`,
+    compris:`74% des dirigeants bancaires utilisent l'IA pour détecter la fraude, 63% pour le support client. Les systèmes legacy sont un frein. Architecture cible : microservices, cloud souverain, APIs ouvertes. DORA, NIS2, ISO 20022 comme leviers.`,
+    valeur:`Rapidité, sécurité, conformité réglementaire, compétitivité face aux fintechs, meilleure expérience client.`,
+    fiabilite:`DAF-Mag est un média spécialisé finance — source légitime pour ce sujet.`
+  },
+  bk4:{
+    title:`n8n — IA locales ou distantes, automatisation`,
+    source:`codeursenseine.com · Novembre 2025`,
+    url:`https://www.codeursenseine.com/2025/programme/conference-c-2-ia-locales-ou-distantes-outils-et-un-chef-d-orchestre-nomme-n8n-antonin-brugnot`,
+    compris:`N8n : plateforme open source no-code/low-code avec 400+ intégrations. IA agents : prompt système + prompt utilisateur. Ollama : modèles locaux (données privées, pas de latence réseau, mais gourmand en GPU). MCP cités : Playwright, Tavily, Atlassian. Docker/Google Cloud Run pour serverless.`,
+    valeur:`Automatisation des processus métiers, contrôle des données, création d'assistants IA internes, flexibilité et sécurité.`,
+    fiabilite:`Codeurs en Seine est un événement reconnu du milieu IT normand — source fiable basée sur une conférence en direct.`
+  },
+  bk5:{
+    title:`Comment les paiements se transforment en 2026`,
+    source:`lesnews.ca · Janvier 2026`,
+    url:`https://lesnews.ca/tech/mobiles/bancaire-central-comment-les-paiements-vont-ils-se-transformer-cette-annee/`,
+    compris:`Smartphone et portefeuilles numériques devraient devenir prédominants d'ici 3 ans. L'IA améliore la détection de fraude et personnalise les transactions. La numérisation s'accélère.`,
+    valeur:`Transactions plus sécurisées et personnalisées, conformité simplifiée, efficacité opérationnelle accrue.`,
+    fiabilite:`LesNews.ca est un média généraliste canadien — à recouper avec des sources spécialisées en finance.`
+  },
+  bk6:{
+    title:`Machine-to-machine — Éviter le piège de la banque invisible`,
+    source:`agefi.fr · Janvier 2026`,
+    url:`https://www.agefi.fr/gestion-privee/actualites/machine-to-machine-eviter-le-piege-de-la-banque-invisible`,
+    compris:`Demain : une IA détecte un besoin de trésorerie, génère le dossier de crédit, obtient une décision en temps réel via échanges automatiques. Les machines communiquent directement. Les banques risquent de devenir de simples fournisseurs d'infrastructure si elles n'exposent pas des APIs sémantiquement riches.`,
+    valeur:`Processus financiers ultra-rapides et temps réel. Mais oblige à repenser les services pour rester compréhensibles par les agents IA.`,
+    fiabilite:`L'Agefi est spécialisé marchés et banque — très haute fiabilité pour les professionnels de la finance.`
+  }
 };
 
 function openVeille(id) {
@@ -1677,10 +2021,32 @@ function closeVeille(e) {
   document.getElementById('veilleModal').classList.remove('open');
   document.body.style.overflow = '';
 }
+function toggleComp(header) {
+  const body = header.nextElementSibling;
+  const isOpen = header.classList.contains('open');
+  header.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
+
 document.querySelectorAll('.vm-close').forEach(b => b.addEventListener('click', () => {
   document.getElementById('veilleModal').classList.remove('open');
   document.body.style.overflow = '';
 }));
+
+function toggleAcc(header) {
+  const body = header.nextElementSibling;
+  const isOpen = header.classList.contains('open');
+  // close all
+  document.querySelectorAll('.acc-header.open').forEach(h => {
+    h.classList.remove('open');
+    h.nextElementSibling.classList.remove('open');
+  });
+  // open clicked if it was closed
+  if (!isOpen) {
+    header.classList.add('open');
+    body.classList.add('open');
+  }
+}
 </script>
 </body>
 </html>
